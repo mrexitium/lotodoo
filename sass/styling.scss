@@ -1,0 +1,25 @@
+// Variables here
+$headline-color: #000;
+$font-size: 20px;
+
+// mixins here
+
+@mixin headline($font-family, $font-size, $font-color) {
+	font-family: $font-family;
+	font-size: $font-size;
+	color: $font-color;
+}
+
+html, body{
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+h1 {
+	@include headline(Helvetica, 20px, #020202);
+}
